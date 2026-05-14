@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Style - Home</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 90%;
+            margin: auto;
+            font-family: monospace;
+            color: #000;
+            background-color: #FDFDFD;
+        }
+
+        header {
+            height: 4rem;
+            border-bottom: 2px solid #E2E2E2;
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            color: #000;
+            font-weight: bold;
+            font-family: monospace;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 60px;
+        }
+
+        nav ul li {
+            list-style: none;
+        }
+
+        .suc-icons svg {
+            width: 22px;
+            margin: 1rem;
+        }
+
+        .suc-icons {
+            display: flex;
+            align-items: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        nav a {
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+
+        .cart {
+            border-radius: 50%;
+            height: 40px;
+            width: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #000;
+        }
+
+        .cart a {
+            color: #fff;
+        }
+
+        h1 {
+            font-size: 4rem;
+            text-align: center;
+            max-width: 800px;
+            margin: 40px auto;
+        }
+
+        .mans {
+            display: grid;
+            grid-template-columns: repeat(5, 260px);
+            justify-content: center;
+        }
+
+        .mans>div {
+            align-content: center;
+            text-align: center;
+        }
+
+        .sc-section {
+            max-width: 150px;
+            position: absolute;
+            top: 25%;
+            left: 10%;
+        }
+
+        .sc-section small {
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+
+        .sc-section p {
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            word-spacing: -5px;
+            margin-top: 15px;
+            line-height: 1.4;
+        }
+
+        .explore-more {
+            position: absolute;
+            top: 25%;
+            right: 10%;
+        }
+
+        .flower1 {
+            position: absolute;
+            top: 14%;
+        }
+
+        .flower2 {
+            position: absolute;
+            top: 30%;
+            left: 25%;
+        }
+
+        .flower3 {
+            position: absolute;
+            top: 14%;
+            right: 10%;
+        }
+
+        .flower4 {
+            position: absolute;
+            bottom: 10px;
+            left: 30%;
+        }
+
+        .flower5 {
+            position: absolute;
+            right: 10%;
+            bottom: 100px;
+        }
+
+        .content-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .content-section svg {
+            width: 20px;
+        }
+
+        .content1 {
+            max-width: 400px;
+        }
+
+        .content1 p {
+            font-weight: 700;
+            font-family: sans-serif;
+            font-size: 0.9rem;
+            line-height: 1.9;
+        }
+
+        .content2 p {
+            display: flex;
+            align-items: center;
+            font-family: monospace;
+            font-size: 0.8rem;
+            font-weight: 700;
+            gap: 0.4rem;
+            text-transform: uppercase;
+        }
+
+        .content3 {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .content3 .sub-content small {
+            font-family: sans-serif;
+            font-weight: 700;
+            font-size: 0.7rem;
+            margin-bottom: 1rem;
+        }
+
+        .content3 .sub-content {
+            max-width: 230px;
+        }
+
+        .content3 .sub-content p {
+            font-size: 1.4rem;
+            margin-top: 1rem;
+        }
+
+        .content3 .number {
+            font-size: 3.5rem;
+            font-family: sans-serif;
+            align-self: end;
+        }
+
+        .year {
+            text-align: center;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <a class="logo" href="#">Deep<sup>o</sup>Style</a>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">New Arrivals</a>
+                </li>
+                <li>
+                    <a href="#">Shop</a>
+                </li>
+                <li>
+                    <a href="#">Beauty</a>
+                </li>
+                <li>
+                    <a href="#">Sale</a>
+                </li>
+                <li>
+                    <a href="#">Journal</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="suc-icons">
+            <div class="search">
+                <a href="#" aria-label="search">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748Z">
+                        </path>
+                    </svg>
+                </a>
+            </div>
+            <div class="user">
+                <a href="#" aria-label="user account">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M20 22H4V20C4 17.2386 6.23858 15 9 15H15C17.7614 15 20 17.2386 20 20V22ZM12 13C8.68629 13 6 10.3137 6 7C6 3.68629 8.68629 1 12 1C15.3137 1 18 3.68629 18 7C18 10.3137 15.3137 13 12 13Z">
+                        </path>
+                    </svg>
+                </a>
+            </div>
+            <div class="cart">
+                <a href="#" aria-label="add to cart">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M4.00436 6.41686L0.761719 3.17422L2.17593 1.76001L5.41857 5.00265H20.6603C21.2126 5.00265 21.6603 5.45037 21.6603 6.00265C21.6603 6.09997 21.6461 6.19678 21.6182 6.29L19.2182 14.29C19.0913 14.713 18.7019 15.0027 18.2603 15.0027H6.00436V17.0027H17.0044V19.0027H5.00436C4.45207 19.0027 4.00436 18.5549 4.00436 18.0027V6.41686ZM6.00436 7.00265V13.0027H17.5163L19.3163 7.00265H6.00436ZM5.50436 23.0027C4.67593 23.0027 4.00436 22.3311 4.00436 21.5027C4.00436 20.6742 4.67593 20.0027 5.50436 20.0027C6.33279 20.0027 7.00436 20.6742 7.00436 21.5027C7.00436 22.3311 6.33279 23.0027 5.50436 23.0027ZM17.5044 23.0027C16.6759 23.0027 16.0044 22.3311 16.0044 21.5027C16.0044 20.6742 16.6759 20.0027 17.5044 20.0027C18.3328 20.0027 19.0044 20.6742 19.0044 21.5027C19.0044 22.3311 18.3328 23.0027 17.5044 23.0027Z">
+                        </path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h1>Make your Fashion Look More Charming</h1>
+        <div class="sc-section">
+            <small>Summer Collection</small>
+            <p>Trandy and Clussi for new season</p>
+        </div>
+        <div class="explore-more">
+            <img src="./images/explore_circle.png" alt="explore more collection">
+        </div>
+        <div class="flower1">
+            <img src="./images/flower1.png" alt="flower1">
+        </div>
+        <div class="flower2">
+            <img src="./images/flower2.png" alt="flower2">
+        </div>
+        <div class="flower3">
+            <img src="./images/flower3.png" alt="flower3">
+        </div>
+
+        <div class="man-grid-section">
+            <div class="mans">
+                <div class="man1">
+                    <img src="./images/man1.png" alt="man1">
+                </div>
+                <div class="man23">
+                    <div class="man2">
+                        <img src="./images/man2.png" alt="man1">
+                    </div>
+                    <div class="man3">
+                        <img src="./images/man3.png" alt="man1">
+                    </div>
+                </div>
+                <div class="man4">
+                    <img src="./images/man4.png" alt="man1">
+                </div>
+                <div class="man56">
+                    <div class="man5">
+                        <img src="./images/man5.png" alt="man1">
+                    </div>
+                    <div class="man6">
+                        <img src="./images/man6.png" alt="man1">
+                    </div>
+                </div>
+                <div class="man7">
+                    <img src="./images/man7.png" alt="man1">
+                    <p class="year">#2022</p>
+                </div>
+            </div>
+            <div class="flower4">
+                <img src="./images/flower4.png" alt="flower4">
+            </div>
+            <div class="flower5">
+                <img src="./images/flower5.png" alt="flower5">
+
+            </div>
+        </div>
+        <div class="content-section">
+            <div class="content1">
+                <div class="quote-icon">
+                    <img src="./images/quote-icon.png" alt="">
+                </div>
+                <p>I'm very much of the 'buy less but buy <br> better' Philosophy. It's what I've never really knew</p>
+                <img src="./images/signature.png" alt="signature">
+            </div>
+            <div class="content2">
+                <p>Scroll Down <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z">
+                        </path>
+                    </svg></p>
+            </div>
+            <div class="content3">
+                <div class="ribbon">
+                    <img src="./images/ribbon.png" alt="">
+                </div>
+                <div class="number">
+                    01
+                </div>
+                <div class="sub-content">
+                    <small>31 may 2022 . Blog</small>
+                    <p>Always be Strong and have valus</p>
+                </div>
+                <div class="right-arrow">
+                    <img src="./images/right-arrow.png" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
