@@ -31,6 +31,7 @@
             text-decoration: none;
         }
 
+        .item5 .no,
         .item6 .no {
             font-size: 4rem;
             margin: 0;
@@ -45,12 +46,13 @@
         .item6 .sub-item1 {}
 
         main {
-            max-width: 1200px;
-            max-height: 600px;
-            margin: auto;
+            max-width: 1000px;
+            max-height: 450px;
+            margin-inline: auto;
             height: 100%;
+            margin-block-start: 4rem;
             display: grid;
-            grid-template-columns: 5% 35% 20% 20% 20%;
+            grid-template-columns: 5% 41% 18% 18% 18%;
             grid-template-rows: 5% 10% 15% 40% 30%;
             gap: 40px;
         }
@@ -85,7 +87,7 @@
         }
 
         .item5 {
-            background-color: lightsalmon;
+            background-color: #000;
             grid-column: 4 / 6;
         }
 
@@ -171,7 +173,7 @@
             justify-content: center;
             flex-direction: column;
             text-align: left;
-            padding-inline: 30%;
+            padding-inline: 25%;
         }
 
         .item6 .sub-item2 {
@@ -183,7 +185,7 @@
             justify-content: center;
             flex-direction: column;
             text-align: left;
-            padding-inline: 30%;
+            padding-inline: 25%;
         }
 
         .pink-circle {
@@ -266,6 +268,32 @@
         .super-nav a:focus {
             font-weight: bold;
         }
+
+        .item5 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .item5 img {
+            width: 45%;
+        }
+
+        .item5 .gd-award {
+            background-color: #fec264;
+            width: 55%;
+            height: 100%;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .item5 .gd-award .gd-text {
+            font-size: 1.5rem;
+            margin: 0;
+        }
     </style>
 </head>
 
@@ -336,6 +364,10 @@
         </div>
         <div class="item5">
             <img src="./images/globe-design.png" alt="">
+            <div class="gd-award">
+                <p class="no">172</p>
+                <p class="gd-text">Global Design <br> Awards</p>
+            </div>
         </div>
         <div class="item6">
             <div class="sub-item1">
